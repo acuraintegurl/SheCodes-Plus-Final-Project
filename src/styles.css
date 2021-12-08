@@ -12,3 +12,20 @@ body {
   background-color: aliceblue;
   padding: 20px;
 }
+
+.inputCity {
+  border: none;
+  padding: 10px;
+  background-color: white;
+}
+
+.submitButton {
+  border: none;
+  background-color: #0e70c0;
+  padding: 10px;
+  color: #fff;
+}
+
+.submitButton:active {
+  background-color: rgba(7, 18, 56, 0.5);
+}
