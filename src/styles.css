@@ -29,3 +29,32 @@ body {
 .submitButton:active {
   background-color: rgba(7, 18, 56, 0.5);
 }
+
+li {
+  list-style: none;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.date {
+  text-align: left;
+}
+
+.city-header {
+  padding-top: 20px;
+}
+.city-name {
+  text-align: center;
+}
+
+.description {
+  text-align: right;
+  margin-right: 0px;
+}
