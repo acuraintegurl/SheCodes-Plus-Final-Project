@@ -4,7 +4,7 @@ body {
   background: linear-gradient(
     90deg,
     rgb(33, 45, 56) 0%,
-    rgb(49, 78, 100) 35%,
+    rgb(51, 99, 136) 35%,
     rgb(96, 157, 170) 100%
   );
 }
@@ -44,11 +44,11 @@ ul {
   display: block;
   margin-top: 10px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .credits a {
-  color: black;
+  color: white;
 }
 
 .current-weather {
