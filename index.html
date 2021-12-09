@@ -10,12 +10,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/styles.css" />
     <script
       src="https://kit.fontawesome.com/6e50485bcc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Weather app</title>
   </head>
   <body>
@@ -24,39 +24,28 @@
         <div class="weather-app-content">
           <form id="search-form">
             <div class="row">
-              <form id="search-form">
-                <div class="search">
-                  <span>
-                    <input
-                      type="text"
-                      class="inputCity"
-                      placeholder="Enter a city"
-                      id="city-input"
-                  /></span>
-                  <span>
-                    <input
-                      type="submit"
-                      class="submitButton"
-                      value="search"
-                      hidefocus="true"
-                  /></span>
-                </div>
-              </form>
+              <div class="col-10">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-1">
+                <button type="submit" value="search" class="btn btn-primary">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
             </div>
-            <div class="row city-header">
-                <div class="col-3 date">
-                    Last updated
-                    <span id="date">
-                </div>
-                <div class="col-6 city-name">
-                    <h1 id="city">London</h1></span>
-                </div>
-                <div class="col-3 description">
-                    <p id="description">Clear</p>
-                </div> 
-            </div>
+          </form>
+          <div class="current-weather">
+            <h1 id="city">Melbourne</h1>
+            <li id="description">Clear</li>
+          </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <div class="clearfix weather-temperature">
                 <img
                   src="https://openweathermap.org/img/wn/01d@2x.png"
@@ -77,22 +66,26 @@
                 </span>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-4">
               <ul>
                 <li>
                   Humidity:
-                  <span id="humidity">73</span>%
+                  <span class="humidity"><span id="humidity">73</span>%</span>
                 </li>
                 <li>
                   Wind:
-                  <span id="wind">2</span>km/h
+                  <span class="wind"> <span id="wind">2</span>km/h</span>
+                </li>
+                <li>
+                  <i class="far fa-clock"></i>
+                  <span class="last-updated"> <span id="date"></span></span>
                 </li>
               </ul>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
         </div>
-        <small>
+        <small class="credits">
           <a
             href="https://github.com/acuraintegurl/vanilla-weather-app"
             target="_blank"

@@ -1,33 +1,18 @@
 body {
-  background-color: #cfbfa2;
+  color: #cccccc;
+  background: rgb(53, 72, 89);
+  background: linear-gradient(
+    90deg,
+    rgb(33, 45, 56) 0%,
+    rgb(49, 78, 100) 35%,
+    rgb(96, 157, 170) 100%
+  );
 }
 
-.weather-app {
-  margin: 10% auto;
-  max-width: 600px;
-}
-
-.weather-app-content {
-  border-radius: 8px;
-  background-color: aliceblue;
-  padding: 20px;
-}
-
-.inputCity {
-  border: none;
-  padding: 10px;
-  background-color: white;
-}
-
-.submitButton {
-  border: none;
-  background-color: #0e70c0;
-  padding: 10px;
-  color: #fff;
-}
-
-.submitButton:active {
-  background-color: rgba(7, 18, 56, 0.5);
+h1 {
+  color: white;
+  margin-bottom: 0;
+  font-size: 30px;
 }
 
 li {
@@ -43,18 +28,89 @@ ul {
   padding-left: 0;
 }
 
-.date {
-  text-align: left;
+#description {
+  text-transform: capitalize;
 }
 
-.city-header {
-  padding-top: 20px;
+#search-form {
+  margin-bottom: 20px;
 }
-.city-name {
+
+#temperature {
+  color: white;
+}
+
+.credits {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+
+.credits a {
+  color: black;
+}
+
+.current-weather {
+  padding-left: 10px;
+}
+
+.humidity,
+.wind,
+.last-updated {
+  color: white;
+  font-weight: 600;
+}
+
+.temperatures {
+  position: relative;
+  top: 12px;
+}
+.temp-integer {
+  font-size: 56px;
+  font-weight: 500;
+}
+.weather-app-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.weather-app {
+  margin: 0px auto;
+  margin-top: 10%;
+  max-width: 600px;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -22px;
+}
+
+.weather-temperature a {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: #cccccc;
+}
+
+.weather-forecast {
+  margin: 20px;
   text-align: center;
 }
 
-.description {
-    
-  text-align: right;
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.7;
 }
